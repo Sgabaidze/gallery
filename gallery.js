@@ -45,4 +45,16 @@ document.addEventListener("DOMContentLoaded", function(){
         nextButton.addEventListener('click', NextImage);
         prevButton.addEventListener('click', prevImage);
 
+        document.addEventListener('keydown', (event) => {
+            if(modal.style.display === 'block'){
+                if(event.key === 'ArrowRight'){
+                    NextImage();
+                }else if(event.key === 'ArrowLeft'){
+                    prevImage();
+                }else if(event.key === 'Escape'){
+                    modal.style.display = 'none';
+                }
+            }
+        });
+
 });
