@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gallery">
+
+        <div class="gallery-imagezero">
+            <img class="gallery-image" src="./src/tesla1.jpg" alt="image 1" style="width: 1000px; height: 563px; object-fit: cover;">
+            <p style="display: none;">image 1</p>
+        </div>
+
+        <div class="gallery-imagezero">
+            <img class="gallery-image" src="./src/tesla2.jpg" alt="image 2" style="width: 1000px; height: 563px; object-fit: cover;">
+            <p style="display: none;">image 2</p>
+        </div>
+
+        <div class="gallery-imagezero">
+            <img class="gallery-image" src="./src/tesla3.jpg" alt="image 3" style="width: 1000px; height: 563px; object-fit: cover;">
+            <p style="display: none;">image 3</p>
+        </div>
+
+        <div class="gallery-imagezero">
+            <img class="gallery-image" src="./src/tesla4.jpg" alt="image 4" style="width: 1000px; height: 563px; object-fit: cover;">
+            <p style="display: none;">image 4</p>
+        </div>
+
+        <div class="gallery-imagezero">
+            <img class="gallery-image" src="./src/tesla5.jpg" alt="image 5" style="width: 1000px; height: 563px; object-fit: cover;">
+            <p style="display: none;">image 5</p>
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <span class="close">&times;</span>
+
+        <img src="" alt="" class="modal-image" style="width: 1000px; height: 563px;">
+        <p id="description"></p>
+        <button class="prev-btn">&#10094;</button>
+        <button class="nxt-btn">&#10095;</button>
+    </div>
+
+    <script src="./gallery.js"></script>
+</body>
+</html>
